@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"      content="Takeru SONODA" />
+    <link href="Styles/MobileStyle.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Style.css" rel="stylesheet" type="text/css" />
+    <title>Identify</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>This is PLANT LORE Identify page</h1>
+            <img src="images/logo.png" width="300" height="200" alt="Logo">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="identify.html">Identify</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="explorer.html" class="dropbtn">Explorer</a>
+                        <div class="dropdown-content">
+                            <a href="explorer.html#Families">Families</a>
+                            <a href="explorer.html#Genera">Genera</a>
+                            <a href="explorer.html#Species">Species</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="Contributor.html">Contributor</a></li>
+                    <li class="nav-item"><a href="Enquiry.html">Enquiry</a></li>
+                    <li class="nav-item"><a href="Profile.html">Profile</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="search" class="search-box">
+                <button type="submit" class="search-button">search</button>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Identify</h2>
+                <p>You can upload any plant photos to check their information:</p>
+                <div class="upload-section">
+                    <div class="upload-btn-wrapper">
+                        <button class="btn">Drag and drop your files or click here</button>
+                        <input type="file" name="plantImage" id="plantImage">
+                    </div>
+                    <p id="file-feedback"></p>
+                </div>
+            </section>
+
+            <section>
+
+                <figure>
+                    <img src="images/Screenshot_kadai.png" width="500" height="300" alt="kadai">
+                    <figcaption>Plant map Image</figcaption>
+                </figure>
+                    <ol>
+                        <li>Country boarder</li>
+                        <li>Provinvial boarder</li>
+                        <li>HoB boarderies</li>
+                    </ol>
+                    <h2>Sample Plant Data</h2>
+                    <table class="custom-table">
+                        <tr>
+                            <th>Family</th>
+                            <td>Dipterocarpaceae</td>
+                        </tr>
+                        <tr>
+                            <th>Genus</th>
+                            <td>Vatica</td>
+                        </tr>
+                        <tr>
+                            <th>Species</th>
+                            <td>Acrocarpa</td>
+                        </tr>
+                    </table>
+
+                
+            </section>
+            <aside id="identify_aside">
+                <div class="content-wrapper">
+                    <h2>Plant Categories</h2>
+                    <dl>
+                        <dt>Family</dt>
+                        <dd>Family is a higher-level category in plant classification that includes multiple genera
+                            (plural of genus) with similar characteristics. </dd>
+                        <dt>Genus</dt>
+                        <dd>Genus is a more specific level of classification below the family, representing a group of
+                            plants with similar characteristics</dd>
+                        <dt>Species</dt>
+                        <dd>Species is the most specific level of plant classification, where plants of the same species
+                            are genetically similar and can interbreed to produce offspring</dd>
+                    </dl>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="mainfooter">
+        <div class="col-1">
+            <h3>Links</h3>
+            <p>Information sourced from <a href="https://www.inaturalist.org/" target="_blank">iNaturalist</a>.</p>
+            <a href="index.html" class="ftlinks">Home</a>
+            <a href="Register.html" class="ftlinks">Register</a>
+            <a href="feedback.html" class="ftlinks">Feedback</a>
+            <a href="enhancement1.html" class="ftlinks">Enhancement 1</a>
+            <a href="enhancement2.html" class="ftlinks">Enhancement 2</a>
+        </div>
+        <div class="col-2">
+            <h3>Contact Us</h3>
+            <a href="https://www.facebook.com/"><img class="social_icons" src="images/facebook-icon.png"
+                    alt="Facebook" /></a>
+            <a href="https://wa.me/"><img class="social_icons" src="images/whatsapp-icon.png" alt="WhatsApp" /></a>
+            <a href="102784225@students.swinburne.edu.my"><img class="social_icons" src="images/gmail-icon.png" alt="Gmail" /></a>
+            <p>Tel: 111-111-111</p>
+        </div>
+    </footer>
+    <script src="JavaScript/navigation.js"></script>
+</body>
+
+</html>

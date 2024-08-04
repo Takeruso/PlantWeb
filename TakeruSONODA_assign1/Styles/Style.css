@@ -1,0 +1,720 @@
+/* --- Fonts and Typography --- */
+@font-face {
+    font-family: '2Dumb';
+    src: url('2Dumb.ttf') format('truetype');
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Header and Menu --- */
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #afe66d;
+    color: black;
+    text-align: center;
+    padding: 2em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+header h1 {
+    margin: 0;
+    font: bold 2em Arial, sans-serif;
+}
+header img {
+    float: left;
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+/* ------ NAVIGATION STYLES ------ */
+nav{
+    height: 2em;
+    line-height: 2em;
+    margin: 20px 0px;
+    padding: 10px;
+}
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #333;
+}
+.nav-item {
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.nav-item a {
+    display: block;
+    padding: 0 10px;
+    line-height: 30px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item a.active {
+    color: #4CAF50;
+    text-decoration: underline; 
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background: #555;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    background: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ------ SEARCH STYLES ------ */
+.search-container {
+    position: relative;
+}
+.search-box {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+}
+.search-button {
+    position: relative;
+    right: 0;
+    top: 0;
+    padding: 6px 10px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.search-button:hover {
+    background: #ccc;
+}
+/* ------ MAIN AMD ASIDE CONTENT STYLES ------ */
+main {
+    font-family: '2Dumb', sans-serif;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto; 
+    margin-top: 250px; 
+    flex: 1 0 auto;
+}
+
+aside{
+    font-family: '2Dumb', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 60%;
+    margin: 0 auto; 
+
+}
+
+
+/* ------ INDEX PAGE MAIN PART STYLES ------ */
+.Topic{
+    font-size: 40px;
+}
+
+.image-gallery {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+
+div.image-gallery {
+    display: flex;          
+    gap: 20px;  
+        
+}
+
+.photo-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* ------ IDENTIFY PAGE MAIN PART STYLES ------ */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    flex: 1;  
+    padding: 20px;
+    box-sizing: border-box;  
+}
+
+.upload-section {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width:calc(80% - 4px); 
+    height: 150px;
+    margin: auto; 
+    text-align: center;
+    border: 2px dashed gray;
+    line-height: 140px; 
+    font-size: 18px;
+    margin: 0 auto; 
+}
+
+.btn {
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #78c17b;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #66a96d;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.content-wrapper {
+    border: 1px solid #101010;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #be5050;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#identify_aside {
+    width: 30vw;
+    float: right;
+    border: 2px solid #afe66d;
+    flex: 0.5;
+    flex-basis: 300px; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+figure img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+#map, #video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#map iframe, #video iframe {
+    margin-top: 20px; 
+}
+
+.custom-table {
+    border-collapse: collapse; 
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #034728; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+/* ------ CONTRIBUTER PAGE MAIN PART STYLES ------ */
+.photo-card {
+    width: 90%; 
+    max-width: 960px; 
+    padding: 10px;
+    margin: 10px auto; 
+    border-radius: 8px;
+    text-align: center;
+}
+.photo-card ol {
+    display: flex;
+    justify-content: center; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.photo-card li {
+    flex: 1; 
+    list-style-type: none; 
+    margin: 0 5px; 
+    box-sizing: border-box; 
+}
+
+.photo-card figure {
+    margin: 0; 
+}
+
+
+
+dl {
+    margin: 20px 0;
+}
+dt {
+    font-weight: bold;
+}
+dd {
+    margin-left: 20px;
+}
+#Contributor_picture, #Contributor_details, #Contributor_aside{
+    display: block;
+    width: 90%;
+    margin-bottom: 20px; 
+    margin: 20px auto; 
+    
+}
+/* ------ vertical-wrapper STYLES ------ */
+.vertical-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    width: 100%;
+}
+/* ------ ENQUIRY PAGE MAIN PART STYLES ------ */
+input[type="text"], input[type="email"], input[type="tel"], select ,textarea{
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+    transition: border-bottom 0.3s;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus {
+    border-bottom: 2px solid #333;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, select:hover {
+    border-bottom: 2px solid #aaa;
+}
+
+.form-container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #afe66d;
+    padding-bottom: 10px;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-submit-button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-submit-button:hover {
+    background-color: #555;
+}
+
+.form-reset-button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #aaa;
+    color: #fff;
+    transition: background-color 0.3s;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-reset-button:hover {
+    background-color: #888;
+}
+form label, form input, form select, form fieldset {
+    flex: 0 0 80%;
+}
+
+form input[type="submit"], form input[type="reset"] {
+    flex: 0 0 23%; 
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#subject-detail {
+    width: 100%;
+    height: 50px;
+    padding: 5px; 
+}
+
+.rating-fieldset {
+    display: flex;
+    flex-wrap: nowrap; 
+    margin-bottom: 20px; 
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rating-fieldset label {
+    display: inline-block;
+    margin: 0 5px; 
+    font-size: 40px; 
+    cursor: pointer; 
+    flex: 0 1 auto;
+    transition: background-color 0.3s;
+}
+
+.rating-fieldset input[type="radio"] {
+    display: none;
+}
+
+.rating-fieldset input[type="radio"]:checked + label {
+    background-color: #333;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ------ EXPLORER PAGE MAIN PART STYLES ------ */
+.explorer-section {
+    display: flex;        
+    justify-content: center; 
+    flex-wrap: wrap;     
+    gap: 20px;         
+}
+
+
+#explorer-main > .explorer-section {
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin-bottom: 40px; 
+}
+
+#explorer-main > .explorer-section > figure{
+    margin: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#explorer-main figure {
+    max-width: 300px;       
+    width: 100%;   
+}
+
+#explorer-main figure img {
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+#explorer-main figcaption dl dt {
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    line-height: 1.5; 
+    text-align: justify; 
+    margin-bottom: 20px; 
+    text-align: left;
+}
+#explorer-main html, body {
+    overflow-x: hidden; 
+}
+/* ------ PROFILE PAGE MAIN PART STYLES ------ */
+.profile-pic{
+    float: none;
+    width: 350px;
+    padding: 20px;
+    margin: 0 auto; 
+    border: groove;
+}
+
+#personal-info {
+    padding: 20px;
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    display: flex;
+    align-items: center; 
+    border-collapse: collapse;
+}
+
+#hometown{
+    padding: 100%;
+    background-color: rgb(96, 206, 96);
+}
+
+#hobby{
+    padding: 100%;
+    background-color: rgb(192, 221, 192);
+}
+
+#artist{
+    padding: 100%;
+    background-color: rgb(96, 206, 96);
+}
+
+#movie{
+    padding: 100%;
+    background-color: rgb(192, 221, 192);
+}
+#game{
+    padding: 100%;
+    background-color: rgb(96, 206, 96);
+}
+
+table tr {
+    height: 40px;
+}
+
+table th, table td {
+    padding: 10px 60px;  
+}
+
+.name {
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+}
+.student-id {
+    font-family: Arial, sans-serif; 
+}
+
+.course-name {
+    color: rgb(35, 73, 35);
+}
+
+/* ------ ENHANCEMENT PART STYLES ------ */
+#Enhancement_main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    width: 100%; /* For example */
+}
+
+.Enhancement {
+    flex-basis: 50%;
+    box-sizing: border-box; 
+}
+
+/* ------ FOOTER PART STYLES ------ */
+/* Styles for the footer */
+
+footer {
+    font-style: italic;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    flex-shrink: 0;
+}
+
+
+.mainfooter {
+    height: auto;
+    max-height: 175px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 21px 7px;
+    font-size: 12px;
+}
+
+.mainfooter h3 {
+    margin-bottom: 20px;
+    font-size: 16.8px;
+    font-weight: bold;
+}
+
+.mainfooter p, .mainfooter a {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.ftlinks {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.ftlinks:hover {
+    color: #ccc;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-2 h3 {
+    margin-bottom: 10px;
+}
+
+.col-2 a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.social_icons {
+    width: 50px;
+    margin-right: 10px; 
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social_icons:last-child {
+    margin-right: 0;
+}
+
+.social_icons:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.enhancement-item {
+    display: block;
+    float: left;
+    flex-flow: column;
+    line-break: auto;
+    display:flex;
+    flex-flow: column;
+}
+
+.enhancement-item a {
+    padding: 0 10px;
+    line-height: 30px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.enhancement-item {
+    color: #4CAF50;
+}
+
+.enhancement-detail{
+    line-break: auto;
+    float: inline-end;
+}

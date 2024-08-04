@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"      content="Takeru SONODA" />
+    <link href="Styles/Style.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/MobileStyle.css" rel="stylesheet" type="text/css" />
+    <title>Explorer</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>This is PLANT LORE Explorer page</h1>
+            <img src="images/logo.png" width="300" height="200" alt="Logo">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="identify.html">Identify</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="explorer.html" class="dropbtn">Explorer</a>
+                        <div class="dropdown-content">
+                            <a href="explorer.html#Families">Families</a>
+                            <a href="explorer.html#Genera">Genera</a>
+                            <a href="explorer.html#Species">Species</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="Contributor.html">Contributor</a></li>
+                    <li class="nav-item"><a href="Enquiry.html">Enquiry</a></li>
+                    <li class="nav-item"><a href="Profile.html">Profile</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="search" class="search-box">
+                <button type="submit" class="search-button">search</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="explorer-main">
+        <div class="vertical-wrapper">
+            <section class="explorer-section" id="Families">
+                <h2>Families</h2>
+
+                <figure>
+                    <img src="images/Burseraceae.png" width="300" height="400">
+                    <figcaption>
+                        <dl>
+                            <dt>Burseraceae</dt>
+                            <dd>The Burseraceae are also known as the torchwood family, the frankincense and myrrh
+                                family, or simply the incense tree family.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Lauraceae.png" width="300" height="400">
+                    <figcaption>
+                        <dl>
+                            <dt>Lauraceae</dt>
+                            <dd>Lauraceae, or the laurels, is a plant family that includes the true laurel and its
+                                closest relatives.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </section>
+
+
+            <section class="explorer-section" id="Genera">
+                <h2>Genera</h2>
+
+                <figure>
+                    <img src="images/Vatica.png" width="300" height="400">
+                    <figcaption>
+                        <dl>
+                            <dt>Vatica</dt>
+                            <dd>Vatica is a genus of plants in the family Dipterocarpaceae.
+                                Its species range from India and southern China through Sri Lanka,
+                                Indochina, Indonesia, the Philippines, and New Guinea.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Dipterocarpus.png" width="300" height="400">
+                    <figcaption>
+                        <dl>
+                            <dt>Dipterocarpus</dt>
+                            <dd>Dipterocarpus is a genus of flowering plants and the type genus of family
+                                Dipterocarpaceae.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section class="explorer-section" id="Species">
+                <h2>Species</h2>
+
+                <figure>
+                    <img src="images/species1.png" width="300" height="400">
+                    <figcaption>
+                        <dl>
+                            <dt>Acrocarpae</dt>
+                            <dd>Acrocarpae is a section of plants with 1304 observations.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/species2.png" width="300" height="400">
+                    <figcaption>
+                        <dl>
+                            <dt>Shrubs</dt>
+                            <dd>Shrubs prostrate or erect, 10 to 30 cm tall, much branched.</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
+
+    <aside>
+        <h2>About Plant Category</h2>
+
+            <ol>
+                <li>
+                    Family
+                    <p>Family is a higher-level category in plant classification that includes multiple genera
+                        (plural of genus) with similar characteristics.</p>
+                </li>
+                <li>
+                    Genus
+                    <p>Genus is a more specific level of classification below the family, representing a group of
+                        plants with similar characteristics</p>
+                </li>
+                <li>
+                    Species
+                    <p>Species is the most specific level of plant classification, where plants of the same species
+                        are genetically similar and can interbreed to produce offspring</p>
+                        
+                </li>
+            </ol>
+    </aside>
+    <footer class="mainfooter">
+        <div class="col-1">
+            <h3>Links</h3>
+            <p>Information sourced from <a href="https://www.inaturalist.org/" target="_blank">iNaturalist</a>.</p>
+            <a href="index.html" class="ftlinks">Home</a>
+            <a href="Register.html" class="ftlinks">Register</a>
+            <a href="feedback.html" class="ftlinks">Feedback</a>
+            <a href="enhancement1.html" class="ftlinks">Enhancement 1</a>
+            <a href="enhancement2.html" class="ftlinks">Enhancement 2</a>
+        </div>
+        <div class="col-2">
+            <h3>Contact Us</h3>
+            <a href="https://www.facebook.com/"><img class="social_icons" src="images/facebook-icon.png"
+                    alt="Facebook" /></a>
+            <a href="https://wa.me/"><img class="social_icons" src="images/whatsapp-icon.png" alt="WhatsApp" /></a>
+            <a href="102784225@students.swinburne.edu.my"><img class="social_icons" src="images/gmail-icon.png"
+                    alt="Gmail" /></a>
+            <p>Tel: 111-111-111</p>
+        </div>
+    </footer>
+    <script src="JavaScript/navigation.js"></script>
+</body>
+
+</html>

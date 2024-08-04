@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author"      content="Takeru SONODA" />
+    <link href="Styles/Style.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/MobileStyle.css" rel="stylesheet" type="text/css" />
+    <title>Encquiry</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>This is PLANT LORE Feedback page</h1>
+            <img src="images/logo.png" width="300" height="200" alt="Logo">
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="identify.html">Identify</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="explorer.html" class="dropbtn">Explorer</a>
+                        <div class="dropdown-content">
+                            <a href="explorer.html#Families">Families</a>
+                            <a href="explorer.html#Genera">Genera</a>
+                            <a href="explorer.html#Species">Species</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="Contributor.html">Contributor</a></li>
+                    <li class="nav-item"><a href="Enquiry.html">Enquiry</a></li>
+                    <li class="nav-item"><a href="Profile.html">Profile</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="search" class="search-box">
+                <button type="submit" class="search-button">search</button>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="form-container">
+            <h2>Feedback Form</h2>
+            <form method="post" action="102784225@students.swinburne.edu.my">
+                <label for="first-name">First name:</label>
+                <input type="text" id="first-name" name="first-name" maxlength="25">
+
+                <label for="last-name">Last name:</label>
+                <input type="text" id="last-name" name="last-name" maxlength="25">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" >
+
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone"  maxlength="10" placeholder="0123456789">
+
+                <fieldset class="rating-fieldset">
+                    <legend>Feedback Rating:</legend>
+                    <input type="radio" id="service-star5" name="service-rating" value="5" />
+                    <label for="service-star5" title="Very satisfied">&#128516;</label> 
+                    <input type="radio" id="service-star4" name="service-rating" value="4" />
+                    <label for="service-star4" title="Satisfied">&#128578;</label> 
+                    <input type="radio" id="service-star3" name="service-rating" value="3" />
+                    <label for="service-star3" title="Neutral">&#128528;</label>
+                    <input type="radio" id="service-star2" name="service-rating" value="2" />
+                    <label for="service-star2" title="Dissatisfied">&#128533;</label> 
+                    <input type="radio" id="service-star1" name="service-rating" value="1" />
+                    <label for="service-star1" title="Very dissatisfied">&#128545;</label>
+                </fieldset>
+        
+                <input type="submit" value="Send" class="form-submit-button">
+                <input type="reset" value="Reset" class="form-reset-button">
+            </form>
+        </div>
+        <div id="previewModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Form Preview</h2>
+        <p id="previewContent"></p>
+        <button id="submitForm">Submit Form</button>
+    </div>
+</div>
+    </main>
+
+    <footer class="mainfooter">
+        <div class="col-1">
+            <h3>Links</h3>
+            <p>Information sourced from <a href="https://www.inaturalist.org/" target="_blank">iNaturalist</a>.</p>
+            <a href="index.html" class="ftlinks">Home</a>
+            <a href="Register.html" class="ftlinks">Register</a>
+            <a href="feedback.html" class="ftlinks">Feedback</a>
+            <a href="enhancement1.html" class="ftlinks">Enhancement 1</a>
+            <a href="enhancement2.html" class="ftlinks">Enhancement 2</a>
+        </div>
+        <div class="col-2">
+            <h3>Contact Us</h3>
+            <a href="https://www.facebook.com/"><img class="social_icons" src="images/facebook-icon.png"
+                    alt="Facebook" /></a>
+            <a href="https://wa.me/"><img class="social_icons" src="images/whatsapp-icon.png" alt="WhatsApp" /></a>
+            <a href="102784225@students.swinburne.edu.my"><img class="social_icons" src="images/gmail-icon.png" alt="Gmail" /></a>
+            <p>Tel: 111-111-111</p>
+        </div>
+    </footer>
+    <script src="JavaScript/feedback-validation.js"></script>
+    <script src="JavaScript/feedback-preview.js"></script>
+
+</body>
+
+</html>

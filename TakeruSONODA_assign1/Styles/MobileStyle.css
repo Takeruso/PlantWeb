@@ -1,0 +1,53 @@
+@media only screen and (max-width: 1300px) {
+    main {
+        padding: 10px;
+    }
+    
+    form {
+        padding: 10px;
+    }
+
+    label, input, select {
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    section, aside {
+        width: 100%;
+    }
+    .photo-card ol {
+        flex-direction: column; 
+    }
+
+    .photo-card li {
+        margin-bottom: 10px; 
+        width: 100%; 
+    }
+    .image-gallery ol {
+        flex-direction: column;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    #Enhancement_main {
+        flex-direction: column;
+    }
+    .Enhancement {
+        flex-basis: 100%; 
+    }
+    .rating-fieldset label {
+        font-size: 24px;
+    }
+
+    .rating-fieldset {
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+    }
+
+}
